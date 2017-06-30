@@ -1,6 +1,6 @@
 //import assert library and user class schema
 const assert = require('assert');
-const User = require('../src/user.js')
+const User = require('../src/user.js');
 
 //using mocha add a describe block and it blocks
 describe('Creating records', () => {
