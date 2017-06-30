@@ -4,7 +4,7 @@ const User = require('../src/user.js')
 
 //using mocha add a describe block and it blocks
 describe('Creating records', () => {
-  it('saves a user', () => {
+  it('saves a user', (done) => {
 
 //step 1 create new user
     const joe = new User({ name: 'Joe' });
@@ -12,10 +12,12 @@ describe('Creating records', () => {
 //step 2 save joe to mongodb
     joe.save()
       .then(() => {
-//step 3 test joe has been added to mongodb using promises
-    // has joe been successfully saved?
+/*step 3 test joe has been added to mongodb using promises
+  has joe been successfully saved? using mongoose isNew flag = true,
+  when created but not yet saved to mongodb */
           assert(!joe.isNew);
-      });  
+          done();
+      });
   });
 });
 
