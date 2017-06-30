@@ -1,10 +1,19 @@
-//import assert library
+//import assert library and user class schema
 const assert = require('assert');
+const User = require('../src/user.js')
 
-//mocha describe block and it blocks
+//using mocha add a describe block and it blocks
 describe('Creating records', () => {
   it('saves a user', () => {
-    assert(1 + 1 === 2);
+
+//step 1 create new user
+    const joe = new User({ name: 'Joe' });
+
+//step 2 save joe to mongodb
+    joe.save();
+
+//step 3 test joe has been added to mongodb
+//    assert();
   });
 });
 
