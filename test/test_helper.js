@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 // tell mongoose we are using ES6 promise library with global.Promise
 mongoose.Promise = global.Promise;
 
-//add before hook to wait for mongodb connection before running tests
+//add before done call back hook function to wait for mongodb connection before running mocha tests
 before((done) => {
   mongoose.connect('mongodb://localhost/users_test');
   mongoose.connection
