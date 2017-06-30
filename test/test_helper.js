@@ -6,3 +6,5 @@ mongoose.connection
   .on('error', (error) => {
     console.warn('Warning', error);
   });
+
+  // to run, at cmd prompt "node test/test_helper.js"
