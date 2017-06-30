@@ -17,7 +17,10 @@ describe('Reading users out of the database', () => {
 
   /*Use model class functions User.find(criteria) and User.findOne(criteria)
     find returns an array, findOne returns a single record
+<<<<<<< HEAD
     add .toString as _id returns objects not strings
+=======
+>>>>>>> 6efb9afc5ed45f7a5ef302e6b1c45e0c82fdb01a
   */
   it('finds all users with a name of joe', (done) => {
     User.find({ name: 'Joe'})
