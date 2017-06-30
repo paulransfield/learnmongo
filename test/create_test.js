@@ -10,10 +10,12 @@ describe('Creating records', () => {
     const joe = new User({ name: 'Joe' });
 
 //step 2 save joe to mongodb
-    joe.save();
-
-//step 3 test joe has been added to mongodb
-//    assert();
+    joe.save()
+      .then(() => {
+//step 3 test joe has been added to mongodb using promises
+    // has joe been successfully saved?
+          assert(!joe.isNew);
+      });  
   });
 });
 
