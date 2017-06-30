@@ -5,7 +5,7 @@ For an in depth essentials course, I recommend (https://www.udemy.com/the-comple
 
 #### Why you should add to this repo?
 
-Software developers **will need to know** how to collaborate with GIT **as we well know**. It's the next wave in the webs evolution, in fact Realtime Apps/Features are already being created at companies like Twitter, Facebook and Google.
+To start mongodb from the command prompt *"C:\Program Files\MongoDB\Server\3.4\bin\mongod.exe"*
 
 *Keep ahead** of the curve and learn how to manage realtime app code, for cool technologies like:
 
