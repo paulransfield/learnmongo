@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-// tell mongoose we are using ES6 promise library
+// tell mongoose we are using ES6 promise library with global.Promise
 mongoose.Promise = global.Promise;
 
 //add before hook to wait for mongodb connection before running tests
