@@ -5,7 +5,10 @@ const Schema = mongoose.Schema;
 
 //schema
 const UserSchema = new Schema({
-  name: String,
+  name: {
+    type: String,
+    required: [true, 'Name is required']
+  },
   postCount: Number
 });
 
